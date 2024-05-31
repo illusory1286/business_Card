@@ -1,0 +1,116 @@
+/* 調整卡片樣式 */
+body {
+    background-color:rgb(143, 236, 227);/* 设置背景色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使 body 高度占满整个视窗 */
+    margin: 0; /* 移除默认 margin */
+}
+
+div.box1{
+    border-radius:10px;;
+    background-color:rgb(240, 243, 223);
+    width: 400px;
+    height: 250px;
+    position: relative;
+    /* margin: -85px 0 0 -150px; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow:hidden;/* 隱藏多餘的圖 */
+    }
+
+/* 調整gif大小 */
+.gifLogo{
+    position: absolute;
+    right: 240px;
+    width: 30%;
+    margin-bottom:10px;
+    top: 10px;
+    left: 10px;
+}
+.gif{  
+    position: absolute;  
+    width: 100px;
+    height: auto;
+    top: 70px;
+    right: 70px;
+}
+
+/* 六角形 */
+.polygon_six{
+    position:absolute;
+    width:20%;
+    height:0;
+    top: -65px;
+    right: -75px;;
+    border-width:0 50px 87px;
+    border-style:solid;
+    border-color:transparent transparent rgb(7, 101, 243);
+}
+.polygon_six:before{
+    position:absolute;
+    content:"";
+    top:87px;
+    left:-50px;
+    width:100px;
+    height:0;
+    background:none;
+    border-width:87px 50px 0;
+    border-style:solid;
+    border-color:rgb(7, 101, 243)transparent transparent;
+}
+
+/* 八角形 */
+.polygon_eight {
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    top: 120px; /* 确保八角形部分在 box2 内部 */
+    right: -45px; /* 确保八角形部分在 box2 内部 */
+    background-color: rgb(228, 97, 204);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+/* 標籤控制 */
+/* 卡片内容样式 */
+.content {
+    position: absolute;
+    font-size: 0.9em;
+    top: 145px;
+    left: 30px;
+}
+
+h1 {
+    position: absolute;
+    padding-left: 20px;
+    font-size: 1.2em;
+    color: blue;
+    top: 40px;
+    left: 10px;
+    /* padding: 50px 20px 20px 10px; */
+}
+
+h2 {
+    position: absolute;
+    padding-left: 20px;
+    color: blue;
+    top: 85px;
+    left: 90px;
+    /* padding: 50px 20px 20px 100px; */
+    /* margin: 30px 0; */
+}
+
+p {
+    font-size: 0.9em;
+    color: black;
+    margin: 5px 0;
+}
+
+div.sideText{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-l; 
+}
