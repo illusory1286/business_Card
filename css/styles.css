@@ -25,11 +25,11 @@ div.box1{
 /* 調整gif大小 */
 .gifLogo{
     position: absolute;
-    right: 240px;
-    width: 30%;
+    right: 20px;
+    width: 20%;
     margin-bottom:10px;
     top: 10px;
-    left: 10px;
+    left: 15px;
 }
 .gif{  
     position: absolute;  
@@ -89,7 +89,7 @@ h1 {
     padding-left: 20px;
     font-size: 1.2em;
     color: blue;
-    top: 40px;
+    top: 60px;
     left: 10px;
     /* padding: 50px 20px 20px 10px; */
 }
